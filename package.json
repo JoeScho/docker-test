@@ -1,0 +1,19 @@
+{
+  "name": "dockertest",
+  "version": "1.0.0",
+  "description": "playing around with docker",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_PATH=. mocha 'test/*.js'"
+  },
+  "author": "Joe Schofield",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
