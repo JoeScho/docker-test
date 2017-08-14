@@ -1,19 +1,46 @@
 {
   "name": "dockertest",
   "version": "1.0.0",
-  "description": "playing around with docker",
+  "description": "Setting up a really simple demo of Docker",
   "main": "server.js",
   "scripts": {
-    "test": "NODE_PATH=. mocha 'test/*.js'"
+    "test": "NODE_PATH=. nyc --reporter=lcov nyc mocha 'test/*.js'",
+    "jshint": "jshint -c .jshintrc *.js test/*.js",
+    "code-style": "jscs -p airbnb *.js test/*.js",
+    "check-coverage": "nyc check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "open-coverage": "open coverage/lcov-report/index.html"
   },
-  "author": "Joe Schofield",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoeScho/docker-test"
+  },
+  "keywords": [
+    "docker",
+    "introduction",
+    "node"
+  ],
+  "author": "@JoeScho",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.1",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.5",
     "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
     "supertest": "^3.0.0"
   },
   "dependencies": {
     "express": "^4.15.4"
-  }
+  },
+  "pre-commit": [
+    "jshint",
+    "code-style",
+    "test",
+    "check-coverage"
+  ]
 }

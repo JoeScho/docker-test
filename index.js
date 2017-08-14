@@ -1,7 +1,5 @@
 'use strict';
 
-module.exports = sayHello;
+const sayHello = (req, res) => res.send('Hello, world!');
 
-function sayHello(req, res) {
-  return res.send('Hello, world!');
-}
+module.exports = sayHello;
