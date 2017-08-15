@@ -1,6 +1,6 @@
 {
   "name": "dockertest_joescho",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Setting up a really simple demo of Docker",
   "main": "server.js",
   "scripts": {
