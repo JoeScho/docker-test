@@ -1,5 +1,6 @@
 # docker-test
-[![Build Status](https://travis-ci.org/JoeScho/docker-test.png?branch=master)](https://travis-ci.org/JoeScho/docker-test)![Code Coverage 100%](https://img.shields.io/badge/code%20coverage-100%25-green.svg?style=flat-square)[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://github.com/joaquimserafim/node-netcat/blob/master/LICENSE)  
+[![Build Status](https://travis-ci.org/JoeScho/docker-test.png?branch=master)](https://travis-ci.org/JoeScho/docker-test)[![Coverage Status](https://coveralls.io/repos/github/JoeScho/docker-test/badge.svg?branch=master)](https://coveralls.io/github/JoeScho/docker-test?branch=master)[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://github.com/JoeScho/docker-test/blob/master/LICENSE)  
+
 A super simple dockerisation of a super simple service
 
 ### How to run
