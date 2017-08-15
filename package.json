@@ -4,9 +4,10 @@
   "description": "Setting up a really simple demo of Docker",
   "main": "server.js",
   "scripts": {
-    "test": "NODE_PATH=. nyc --reporter=lcov nyc mocha 'test/*.js'",
-    "jshint": "jshint -c .jshintrc *.js test/*.js",
+    "test": "NODE_PATH=. nyc mocha 'test/*.js'",
+    "jshint": "jshint *.js test/*.js",
     "code-style": "jscs -p airbnb *.js test/*.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "check-coverage": "nyc check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
     "open-coverage": "open coverage/lcov-report/index.html"
   },
@@ -28,6 +29,7 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.1",
+    "coveralls": "^2.13.1",
     "jscs": "^3.0.7",
     "jshint": "^2.9.5",
     "mocha": "^3.5.0",
@@ -42,5 +44,19 @@
     "code-style",
     "test",
     "check-coverage"
-  ]
+  ],
+  "jshintConfig": {
+    "boss": true,
+    "node": true,
+    "strict": false,
+    "smarttabs": true,
+    "maxlen": 80,
+    "newcap": false,
+    "undef": true,
+    "unused": true,
+    "onecase": true,
+    "indent": 2,
+    "sub": true,
+    "esversion": 6
+  }
 }
