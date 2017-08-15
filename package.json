@@ -1,5 +1,5 @@
 {
-  "name": "dockertest",
+  "name": "dockertest_joescho",
   "version": "1.0.0",
   "description": "Setting up a really simple demo of Docker",
   "main": "server.js",
