@@ -1,4 +1,4 @@
-# docker-test
+# example.docker
 [![Build Status](https://travis-ci.org/JoeScho/docker-test.png?branch=master)](https://travis-ci.org/JoeScho/docker-test)[![Coverage Status](https://coveralls.io/repos/github/JoeScho/docker-test/badge.svg?branch=master)](https://coveralls.io/github/JoeScho/docker-test?branch=master)[![ISC License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat-square)](https://github.com/JoeScho/docker-test/blob/master/LICENSE)  
 
 A super simple dockerisation of a super simple service
